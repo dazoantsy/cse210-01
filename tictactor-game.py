@@ -6,7 +6,9 @@ def main ():
         board= move (current_player, board)
         display (board)
         current_player = turn (current_player)
-    print ('You win!!!')
+    
+    winner = turn (current_player)
+    print (f'{winner} wins!!!')
     print ('Good game. Thanks for playing!')
     
 def display (board):
